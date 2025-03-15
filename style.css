@@ -1,0 +1,63 @@
+body {
+    margin: 0px;
+}
+
+.page {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.page>div {
+    padding: 0.75rem;
+    border: 2px solid red;
+}
+
+.body {
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img.icon {
+    cursor: pointer;
+    width: 30px;
+    transition: 0.5s all ease;
+}
+
+img.icon:hover{
+    transition: 0.1s all ease;
+    transform: scale(1.3);
+}
+
+.company-logo {
+    flex-grow: 1;
+    align-self: center;
+    text-align: center;
+    font-size: 48px;
+}
+
+.menu {
+    position: fixed;
+    top: 76px;
+    left: 0px;
+    width: 35%;
+    height: 100%;
+    transition: 0.4s all ease;
+    background: #ffbbbb;
+}
+
+.menu-name{
+    flex-grow: 1;
+}
+
+.inactive {
+    left:-101%;
+}
